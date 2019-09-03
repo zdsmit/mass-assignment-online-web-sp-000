@@ -3,8 +3,6 @@
 # freebie test to make sure you've actually defined the models you plan on
 # testing.
 
-require './lib/person.rb'
-
 describe Person do
 
   let(:avi_attributes) {

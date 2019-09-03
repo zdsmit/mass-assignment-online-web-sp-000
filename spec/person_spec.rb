@@ -3,7 +3,7 @@
 # freebie test to make sure you've actually defined the models you plan on
 # testing.
 
-require_relative './lib/person.rb'
+require './lib/person.rb'
 
 describe Person do
 

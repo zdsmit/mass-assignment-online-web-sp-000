@@ -4,8 +4,10 @@ class Person
 :wrist_size, :glove_size, :pant_length, :pant_width
   @@people = []
 
-  def initialize(attributes)
-    attributes.each {|key, value| self.send(("#{key=}"), value)}
+  def initialize(attributes=nil)
+    if attributes
+      attributes.each {|key, value| self.send(("#{key=}"), value)}
+    end
     people << self
   end
 
